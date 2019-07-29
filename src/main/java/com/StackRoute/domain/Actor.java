@@ -1,4 +1,4 @@
-package com.StackRoute.Task1;
+package com.StackRoute.domain;
 
 public class Actor extends Movie{
     private String name;

@@ -3,23 +3,23 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-    <bean id="actor1" class="com.StackRoute.Task1.Actor">
+    <bean id="actor1" class="com.StackRoute.domain.Actor">
         <constructor-arg index="0" value="SalmanKhan"> </constructor-arg>
         <constructor-arg index="1" value="male"> </constructor-arg>
         <constructor-arg index="2" value="50"></constructor-arg>
     </bean>
-    <bean id="actor2" class="com.StackRoute.Task1.Actor">
+    <bean id="actor2" class="com.StackRoute.domain.Actor">
         <constructor-arg index="0" value="Hritik"> </constructor-arg>
         <constructor-arg index="1" value="male"> </constructor-arg>
         <constructor-arg index="2" value="24"></constructor-arg>
     </bean>
-    <bean id="actor3" class="com.StackRoute.Task1.Actor">
+    <bean id="actor3" class="com.StackRoute.domain.Actor">
         <constructor-arg name="name" value="Shraddha"> </constructor-arg>
         <constructor-arg index="1" value="Female"> </constructor-arg>
         <constructor-arg type="int" value="24"></constructor-arg>
     </bean>
 <!--    Autowiring without Constructor -->
-    <bean id="movie1" autowire="byName" class="com.StackRoute.Task1.Movie">
+    <bean id="movie1" autowire="byName" class="com.StackRoute.domain.Movie">
         <property name="actor" ref="actor1" ></property>
     </bean>
 </beans>

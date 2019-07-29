@@ -1,7 +1,7 @@
 package com.StackRoute;
 
 
-import com.StackRoute.Task1.Movie;
+import com.StackRoute.domain.Movie;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
