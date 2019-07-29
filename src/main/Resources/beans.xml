@@ -22,6 +22,7 @@
 <!--    <bean id="movie1" autowire="byName" class="com.StackRoute.domain.Movie">-->
 <!--        <property name="actor" ref="actor1" ></property>-->
 <!--    </bean>-->
-    <bean id="postProcessing" class="com.StackRoute.BeanPostProcessorDemo"></bean>
+    <bean id="lifeCycle" class="com.StackRoute.BeanLifeCycleDemo" init-method="Init" destroy-method="destroy"></bean>
+<!--    <bean id="postProcessing" class="com.StackRoute.BeanPostProcessorDemo"></bean>-->
 </beans>
 

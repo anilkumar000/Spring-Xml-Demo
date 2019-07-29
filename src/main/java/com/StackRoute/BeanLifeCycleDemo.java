@@ -6,9 +6,9 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class BeanLifeCycleDemo implements InitializingBean, DisposableBean {
     public  static  void main(String args []) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("BeanFile.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
-        BeanLifeCycleDemo beanLifeCycleDemo = (BeanLifeCycleDemo) applicationContext.getBean("lifecycle");
+        BeanLifeCycleDemo beanLifeCycleDemo = (BeanLifeCycleDemo) applicationContext.getBean("lifeCycle");
     }
     public void Init ()
     {
