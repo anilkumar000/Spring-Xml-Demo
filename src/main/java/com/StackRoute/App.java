@@ -14,9 +14,6 @@ public class App
         Movie movie1=(Movie)applicationContext.getBean("movie1");
         System.out.println(movie1.getActor());
 
-        Movie movie3=(Movie)applicationContext.getBean("movie3");
-        System.out.println(movie3.getActor());
-        System.out.println(movie1==movie3);
 
 
     }

@@ -18,11 +18,9 @@
         <constructor-arg index="1" value="Female"> </constructor-arg>
         <constructor-arg type="int" value="24"></constructor-arg>
     </bean>
-    <bean name="movie1,movie3" class="com.StackRoute.Task1.Movie" scope="singleton" >
-        <constructor-arg name="actor" ref="actor1" ></constructor-arg>
-    </bean>
-    <bean id="movie2,movie4" class="com.StackRoute.Task1.Movie"  scope="prototype">
-        <constructor-arg name="actor" ref="actor2" ></constructor-arg>
+<!--    Autowiring without Constructor -->
+    <bean id="movie1" autowire="byName" class="com.StackRoute.Task1.Movie">
+        <property name="actor" ref="actor1" ></property>
     </bean>
 </beans>
 
