@@ -11,8 +11,12 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
-        Movie movie1=(Movie)applicationContext.getBean("movie1");
-        System.out.println(movie1.getActor());
+
+        ((ClassPathXmlApplicationContext) applicationContext).registerShutdownHook();
+        BeanLifeCycleDemo beanLifeCycleDemo = (BeanLifeCycleDemo)applicationContext.getBean("lifeCycle");
+        System.out.println(beanLifeCycleDemo.toString());
+//        Movie movie1=(Movie)applicationContext.getBean("movie1");
+//        System.out.println(movie1.getActor());
 
 
 
